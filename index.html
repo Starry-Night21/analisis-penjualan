@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Analisis Penjualan</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- PapaParse -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+    <h1>Web App Analisis Penjualan</h1>
+
+    <!-- Upload -->
+     <div class="card">
+        <h3>Upload File CSV</h3>
+        <input type="file" id="fileInput" accept=".csv">
+     </div>
+
+     <!-- Tabel -->
+      <div class="card">
+        <h3>Data Tabel</h3>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Produk</th>
+                    <th>Kategori</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Insight -->
+       <div class="card">
+        <h3>Insight</h3>
+        <p id="insightText">Belum ada data</p>
+    </div>
+    <div class="card">
+        <h3>Visualisasi Penjualan</h3>
+        <div class="chart-container">
+            <div class="chart-box">
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="totalChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="card">
+        <h3>Tabel Kategori</h3>
+        <canvas id="categoryChart"></canvas>
+    </div>
+    <div class="card">
+        <h3>Total Penjualan</h3>
+        <canvas id="totalChart"></canvas>
+    </div> -->
+
+       <script src="script.js"></script>
+       <footer class="footer">
+            <p>© 2026 Bintang Rahmat Ihsandi</p>
+            <p>
+                <a href="https://github.com/Starry-Night21/analisis-penjualan" target="_blank">GitHub</a> |
+                <a href="#">Demo</a>
+            </p>
+        </footer>
+</body>
+</html>
